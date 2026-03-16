@@ -121,10 +121,38 @@ body {
   top: 0;
   min-height: 120px;
   z-index: 100;
-  .nav-link{
+  .nav-item{
+    .nav-link{
       font-size:1rem;
+      position:relative;
+      margin-left:.5rem;
+      margin-right:.5rem;
   }
+  }
+  
 
+}
+
+.special-icon::after{
+    content:url(../imgs/chevron-down-solid.svg);
+    display:block;
+    border:none;
+    background:none;
+    position:absolute;
+    rotate:180deg;
+    width:10px;
+    bottom:0;
+    right:0;
+    translate:100%;
+    margin:5px;
+    transition:0.5s ease;
+}
+.special-icon:hover::after{
+    content:url(../imgs/chevron-down-solid-hover.svg);
+}
+.special-icon[aria-expanded="true"]::after{
+    content:url(../imgs/chevron-down-solid-hover.svg);
+    rotate:360deg;
 }
 #searchbar {
   translate: 0 418px;
