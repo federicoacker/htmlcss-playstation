@@ -1,0 +1,9 @@
+body{
+    font-family: 'SST', Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+.sony-logo{
+    width:100%;
+    max-width:128px;
+}
