@@ -58,6 +58,14 @@ body {
   background-color: var(--af-btn-primary);
   color: white;
 }
+.af-img-fluid {
+  max-width: 75%;
+  height: auto;
+}
+.af-img-fluid-2 {
+  max-width: 50%;
+  height: auto;
+}
 /*Header*/
 .sony-logo {
   width: 100%;
@@ -100,8 +108,4 @@ body {
 /* Sezione Playstation-5 */
 .playstation-5-title {
   font-size: 3rem;
-}
-.playstation-5-showcase-image{
-    max-width:75%;
-    height:auto;
 }
