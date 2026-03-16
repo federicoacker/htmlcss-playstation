@@ -3,15 +3,19 @@
   --af-btn-secondary: #cd3d0f;
   --af-btn-tertiary: #d9dadc;
   --af-btn-quaternary: #f5f5f5;
-  --af-text-primary:#376BE5;
+  --af-text-primary: #376be5;
+  --af-bg-primary: #161c3b;
 }
 body {
   font-family: "SST", Arial, Helvetica, sans-serif;
 }
 
 /*utilities*/
+.af-bg-primary {
+  background-color: var(--af-bg-primary);
+}
 .af-btn {
-  display: inline;
+  display: inline-block;
   border: none;
   border-radius: 75px;
   transition: 0.5s ease;
@@ -26,8 +30,9 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  white-space:nowrap;
-  max-width:50%;
+  white-space: nowrap;
+  max-width: 50%;
+  min-width:218px;
 }
 .af-btn:hover {
   scale: 105%;
@@ -73,13 +78,13 @@ body {
   max-width: 50%;
   height: auto;
 }
-.af-img-fluid-4{
-    max-width:30%;
-    height:auto;
+.af-img-fluid-4 {
+  max-width: 30%;
+  height: auto;
 }
 
-.af-text-primary{
-    color:var(--af-text-primary);
+.af-text-primary {
+  color: var(--af-text-primary);
 }
 @media screen and (min-width: 768px) {
   .af-w-md-20 {
@@ -164,9 +169,9 @@ body {
   min-height: 600px;
 }
 /*Sezione Nuove uscite */
-.new-release-btn{
-    color:white;
-    position:relative;
+.new-release-btn {
+  color: white;
+  position: relative;
 }
 .new-release-btn:hover::after {
   content: "";
@@ -176,6 +181,6 @@ body {
   height: 3px;
   bottom: 5%;
   left: 50%;
-  translate: -50% ;
+  translate: -50%;
   position: absolute;
 }
