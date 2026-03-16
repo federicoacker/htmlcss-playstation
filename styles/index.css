@@ -140,8 +140,13 @@ body {
   translate: -50%;
   position: absolute;
 }
-/*Sezione Playstation Plus*/
-
+/*Sezione ps4*/
+.ps4-card{
+    transition:0.3s ease;
+}
+.ps4-card:hover{
+    scale:105%;
+}
 /*Sezione Sales*/
 .sales-item {
   transition: 0.3s ease;
