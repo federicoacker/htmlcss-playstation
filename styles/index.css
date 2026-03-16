@@ -152,3 +152,19 @@ body {
   height: 100%;
   min-height: 600px;
 }
+/*Sezione Nuove uscite */
+.new-release-btn{
+    color:white;
+    position:relative;
+}
+.new-release-btn:hover::after {
+  content: "";
+  display: block;
+  width: 60%;
+  background-color: var(--af-btn-primary);
+  height: 3px;
+  bottom: 5%;
+  left: 50%;
+  translate: -50% ;
+  position: absolute;
+}
