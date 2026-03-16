@@ -3,10 +3,11 @@
   --af-btn-secondary: #cd3d0f;
   --af-btn-tertiary: #d9dadc;
   --af-btn-quaternary: #f5f5f5;
-  --af-access-button:#363636;
+  --af-access-button: #363636;
   --af-text-primary: #376be5;
   --af-bg-primary: #161c3b;
   --af-bg-footer: #00439c;
+  --af-bg-secondary: #bebcbb;
 }
 /*utilities*/
 .af-bg-primary {
@@ -14,6 +15,9 @@
 }
 .af-bg-footer {
   background-color: var(--af-bg-footer);
+}
+.af-bg-secondary{
+  background-color: var(--af-bg-secondary);
 }
 .af-btn {
   display: inline-block;
@@ -33,7 +37,7 @@
   cursor: pointer;
   white-space: nowrap;
   max-width: 50%;
-  min-width:218px;
+  min-width: 218px;
 }
 .af-btn:hover {
   scale: 105%;
@@ -67,13 +71,13 @@
   background-color: var(--af-btn-primary);
   color: white;
 }
-.af-access-btn{
-    background-color:var(--af-access-button);
-    color:white;
-    min-width:0;
+.af-access-btn {
+  background-color: var(--af-access-button);
+  color: white;
+  min-width: 0;
 }
-.af-access-btn:hover{
-    background-color:var(af-btn-primary);
+.af-access-btn:hover {
+  background-color: var(af-btn-primary);
 }
 .af-img-fluid {
   max-width: 75%;

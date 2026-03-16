@@ -7,6 +7,7 @@
   --af-text-primary: #376be5;
   --af-bg-primary: #161c3b;
   --af-bg-footer: #00439c;
+  --af-bg-secondary:#BEBCBB;
 }
 body {
   font-family: "SST", Arial, Helvetica, sans-serif;
@@ -42,7 +43,7 @@ body {
   width: 10px;
   bottom: 0;
   right: 0;
-  translate: 100%;
+  translate: 150%;
   margin: 5px;
   transition: 0.5s ease;
 }
