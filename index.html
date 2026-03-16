@@ -12,13 +12,22 @@
 </head>
 
 <body>
+    <div class="offcanvas offcanvas-top af-bg-primary justify-content-center align-items-center" tabindex="-1"
+        id="searchbar" aria-labelledby="offcanvasExampleLabel">
+        <form class="d-flex w-50 " role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+    </div>
     <header class="header fs-3">
         <div class="header-black-bar bg-black d-flex justify-content-end align-items-center">
             <img class="sony-logo m-3" src="./imgs/sony_logo.svg">
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img class="logo img-fluid" src="./imgs/play_logo.svg">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +35,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Giochi
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -46,14 +49,95 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hardware
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servizi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Novità
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Fai Acquisti
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Supporto
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            My PlayStation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchbar"
+                        aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                    </button>
                 </div>
             </div>
         </nav>
@@ -371,7 +455,8 @@
                         <img src="./imgs/ps-plus-logo.png" class="card-img-top af-img-fluid-2"
                             alt="Logo di Playstation Plus">
                         <div class="card-body text-black">
-                            <p class="playstation-plus-text card-text py-xl-4">Migliora la tua esperienza PlayStation con l'accesso a
+                            <p class="playstation-plus-text card-text py-xl-4">Migliora la tua esperienza PlayStation
+                                con l'accesso a
                                 multigiocatore online, giochi mensili, sconti esclusivi e altro ancora.</p>
                             <a href="#" class="buy-btn af-btn af-text-primary af-btn-quaternary fs-5 fw-bold">Esplora
                                 PlayStation Plus</a>
@@ -396,22 +481,19 @@
             <main class="row align-items-center px-4">
                 <div class="col-12 col-md-4">
                     <figure class="sales-item">
-                        <img class="img-fluid "
-                            src="./imgs/playstation-store-games-under-20-spotlight.jpg"
+                        <img class="img-fluid " src="./imgs/playstation-store-games-under-20-spotlight.jpg"
                             alt="Immagine per giochi sotto i 20 euro">
                     </figure>
                 </div>
                 <div class="col-12 col-md-4">
                     <figure class="sales-item">
-                        <img class="img-fluid "
-                            src="./imgs/playstation-store-golden-week-sale-spotlight.jpg"
+                        <img class="img-fluid " src="./imgs/playstation-store-golden-week-sale-spotlight.jpg"
                             alt="Immagine per saldi della golden-week">
                     </figure>
                 </div>
                 <div class="col-12 col-md-4">
                     <figure class="sales-item">
-                        <img class="img-fluid "
-                            src="./imgs/playstation-store-free-to-play-spotlight.png"
+                        <img class="img-fluid " src="./imgs/playstation-store-free-to-play-spotlight.png"
                             alt="Immagine per giochi free to play">
                     </figure>
                 </div>
@@ -424,7 +506,8 @@
                         <img src="./imgs/ps-now-logo-two-column.png" class="card-img-top af-img-fluid-2"
                             alt="Logo di Playstation Now">
                         <div class="card-body text-white">
-                            <p class="playstation-now-text card-text py-xl-4">Ottieni l'accesso immediato a una vastissima raccolta di
+                            <p class="playstation-now-text card-text py-xl-4">Ottieni l'accesso immediato a una
+                                vastissima raccolta di
                                 oltre
                                 800 giochi per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese.
                             </p>
@@ -516,7 +599,8 @@
             <div class="col-12 col-lg-6">
                 <figure class="px-sm-3 px-md-5">
                     <img class="img-fluid logo py-4 py-lg-2" src="./imgs/sie-logo.svg">
-                    <figcaption class="text-white">Website &copy;2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti,
+                    <figcaption class="text-white">Website &copy;2021 Sony Interactive Entertainment Europe Limited.
+                        Tutti i contenuti,
                         nomi dei giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini
                         associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari.
                         Tutti i diritti riservati. <a href="#" class="text-white">Maggiori info</a></figcaption>

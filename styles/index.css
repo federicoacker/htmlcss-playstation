@@ -86,12 +86,12 @@ body {
   max-width: 30%;
   height: auto;
 }
-.logo{
-    width:100%;
-    max-width:120px;
+.logo {
+  width: 100%;
+  max-width: 120px;
 }
-.logo-small{
-    max-width:1rem;
+.logo-small {
+  max-width: 1rem;
 }
 .af-text-primary {
   color: var(--af-text-primary);
@@ -110,7 +110,27 @@ body {
 .header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  min-height: 120px;
+  z-index: 100;
+  .nav-link{
+      font-size:1rem;
+  }
+
+}
+#searchbar {
+  translate: 0 540px;
+  --bs-offcanvas-height: 50px;
+}
+@media screen and (min-width: 992px) {
+  #searchbar {
+    translate: 0 120px;
+  }
+  .header{
+    .nav-link{
+            font-size:1.5rem;
+    }
+
+  }
 }
 
 /*Main */
@@ -196,43 +216,42 @@ body {
   position: absolute;
 }
 /*Sezione Playstation Plus*/
-@media screen and (min-width:768px){
-    .playstation-plus-text,
-    .playstation-now-text{
-        font-size:1.1rem;
-    }
+@media screen and (min-width: 768px) {
+  .playstation-plus-text,
+  .playstation-now-text {
+    font-size: 1.1rem;
+  }
 }
-@media screen and (min-width:992px)
-{
-    .playstation-plus-text,
-    .playstation-now-text{
-        font-size:1.5rem;
-    }
+@media screen and (min-width: 992px) {
+  .playstation-plus-text,
+  .playstation-now-text {
+    font-size: 1.5rem;
+  }
 }
 /*Sezione Sales*/
-.sales-item{
-    transition:0.3s ease;
+.sales-item {
+  transition: 0.3s ease;
 }
-.sales-item:hover{
-    scale:105%;
-    box-shadow:0 0 20px rgba(0,0,0,0.5);
+.sales-item:hover {
+  scale: 105%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 /*Sezione social*/
-.social-btn{
-    display:inline-block;
-    transition:0.3s ease;
+.social-btn {
+  display: inline-block;
+  transition: 0.3s ease;
 }
-.social-btn:hover{
-    scale:105%;
+.social-btn:hover {
+  scale: 105%;
 }
 /*Footer*/
-ul{
-    list-style-type:none;
+ul {
+  list-style-type: none;
 }
-.footer-link{
-    text-decoration:none;
-    color:white;
+.footer-link {
+  text-decoration: none;
+  color: white;
 }
-.footer-link:hover{
-    text-decoration:underline;
+.footer-link:hover {
+  text-decoration: underline;
 }
