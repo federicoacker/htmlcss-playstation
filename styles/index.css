@@ -195,6 +195,20 @@ body {
   translate: -50%;
   position: absolute;
 }
+/*Sezione Playstation Plus*/
+@media screen and (min-width:768px){
+    .playstation-plus-text,
+    .playstation-now-text{
+        font-size:1.1rem;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .playstation-plus-text,
+    .playstation-now-text{
+        font-size:1.5rem;
+    }
+}
 /*Sezione Sales*/
 .sales-item{
     transition:0.3s ease;
