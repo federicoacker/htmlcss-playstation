@@ -35,3 +35,9 @@ body{
     scale:105%;
 }
 
+/* Row dei game sotto il banner */
+.other-game-image:hover{
+    border:2px solid white;
+    outline:3px solid var(--bs-primary);
+}
+
