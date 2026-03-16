@@ -12,7 +12,16 @@ body{
 .featured-game{
     background-image: url(../imgs/jumbo-bg.png);
     background-repeat: no-repeat;
-    background-size:100% auto;
-    width:100vw;
-    aspect-ratio:calc(16 / 9);
+    background-position:center;
+    background-size:cover;
+    aspect-ratio: calc(18 / 6.75);
+}
+.featured-game > .container {
+    height:100%;
+    min-height:500px;
+}
+.featured-game-card{
+    z-index:0;
+    background:none;
+    border:none;
 }
