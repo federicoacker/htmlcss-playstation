@@ -66,6 +66,10 @@ body {
   max-width: 60%;
   height: auto;
 }
+.af-img-fluid-3 {
+  max-width: 30%;
+  height: auto;
+}
 @media screen and (min-width: 768px) {
   .af-w-md-20 {
     width: calc(20% - 0.75rem);
@@ -91,7 +95,7 @@ body {
   background-size: cover;
   aspect-ratio: calc(18 / 6.75);
 }
-.featured-game > .container {
+.featured-game > .container-fluid {
   height: 100%;
   min-height: 500px;
 }
@@ -135,4 +139,16 @@ body {
   left: 50%;
   translate: -50% 0;
   position: absolute;
+}
+/*Sezione it takes two */
+.second-featured-game {
+  background-image: url(../imgs/it-takes-two-hero-banner-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: calc(18 / 6.75);
+}
+.second-featured-game > .container-fluid {
+  height: 100%;
+  min-height: 600px;
 }
