@@ -3,6 +3,7 @@
   --af-btn-secondary: #cd3d0f;
   --af-btn-tertiary: #d9dadc;
   --af-btn-quaternary: #f5f5f5;
+  --af-text-primary:#376BE5;
 }
 body {
   font-family: "SST", Arial, Helvetica, sans-serif;
@@ -73,6 +74,9 @@ body {
 .af-img-fluid-4{
     max-width:30%;
     height:auto;
+}
+.af-text-primary{
+    color:var(--af-text-primary);
 }
 @media screen and (min-width: 768px) {
   .af-w-md-20 {
