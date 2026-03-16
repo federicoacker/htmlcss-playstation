@@ -101,3 +101,7 @@ body {
 .playstation-5-title {
   font-size: 3rem;
 }
+.playstation-5-showcase-image{
+    max-width:75%;
+    height:auto;
+}
