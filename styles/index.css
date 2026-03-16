@@ -7,6 +7,11 @@ body{
     width:100%;
     max-width:128px;
 }
+.header{
+    position:sticky;
+    top:0;
+    z-index:1;
+}
 
 /*Main */
 .featured-game{
@@ -36,8 +41,19 @@ body{
 }
 
 /* Row dei game sotto il banner */
+.other-game-image{
+        border:2px solid transparent;
+        outline:3px solid transparent;
+        transition:0.3s ease;
+}
 .other-game-image:hover{
     border:2px solid white;
     outline:3px solid var(--bs-primary);
+    
 }
+/* Sezione Playstation-5 */
+.playstation-5-title{
+    font-size:3rem;
+}
+
 
