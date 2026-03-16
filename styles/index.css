@@ -179,7 +179,8 @@ body {
   min-height: 600px;
 }
 /*Sezione Nuove uscite */
-.new-release-btn {
+.new-release-btn,
+.social-btn {
   color: white;
   position: relative;
 }
@@ -194,6 +195,22 @@ body {
   translate: -50%;
   position: absolute;
 }
+/*Sezione Sales*/
+.sales-item{
+    transition:0.3s ease;
+}
+.sales-item:hover{
+    scale:105%;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+/*Sezione social*/
+.social-btn{
+    display:inline-block;
+    transition:0.3s ease;
+}
+.social-btn:hover{
+    scale:105%;
+}
 /*Footer*/
 ul{
     list-style-type:none;
@@ -201,4 +218,7 @@ ul{
 .footer-link{
     text-decoration:none;
     color:white;
+}
+.footer-link:hover{
+    text-decoration:underline;
 }
