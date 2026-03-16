@@ -109,3 +109,24 @@ body {
 .playstation-5-title {
   font-size: 3rem;
 }
+.playstation-5-image-wrapper{
+    position:relative;
+    opacity:0.8;
+    transition:0.3s ease;
+    border-radius:75px;
+}
+.playstation-5-image-wrapper:hover{
+    opacity:1;
+    scale:105%;
+}
+.playstation-5-image-wrapper:hover::after{
+    content:"";
+    display:block;
+    width:60%;
+    background-color:var(--af-btn-primary);
+    height:3px;
+    bottom:0;
+    left:50%;
+    translate:-50% 0;
+    position:absolute;
+}
