@@ -67,8 +67,12 @@ body {
   height: auto;
 }
 .af-img-fluid-3 {
-  max-width: 30%;
+  max-width: 50%;
   height: auto;
+}
+.af-img-fluid-4{
+    max-width:30%;
+    height:auto;
 }
 @media screen and (min-width: 768px) {
   .af-w-md-20 {
@@ -99,7 +103,7 @@ body {
   height: 100%;
   min-height: 500px;
 }
-.featured-game-card {
+.basic-card {
   z-index: 0;
   background: none;
   border: none;
