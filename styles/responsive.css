@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+  .af-w-md-20 {
+    width: calc(20% - 0.75rem);
+  }
+  .playstation-plus-text,
+  .playstation-now-text {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #searchbar {
+    translate: 0 120px;
+  }
+  .header {
+    .nav-link {
+      font-size: 1.5rem;
+    }
+  }
+  .playstation-plus-text,
+  .playstation-now-text {
+    font-size: 1.5rem;
+  }
+}
