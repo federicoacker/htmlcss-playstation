@@ -3,6 +3,7 @@
   --af-btn-secondary: #cd3d0f;
   --af-btn-tertiary: #d9dadc;
   --af-btn-quaternary: #f5f5f5;
+  --af-access-button:#363636;
   --af-text-primary: #376be5;
   --af-bg-primary: #161c3b;
   --af-bg-footer: #00439c;
@@ -36,7 +37,7 @@ body {
   cursor: pointer;
   white-space: nowrap;
   max-width: 50%;
-  min-width: 218px;
+  min-width:218px;
 }
 .af-btn:hover {
   scale: 105%;
@@ -69,6 +70,14 @@ body {
 .af-btn-quaternary:hover {
   background-color: var(--af-btn-primary);
   color: white;
+}
+.af-access-btn{
+    background-color:var(--af-access-button);
+    color:white;
+    min-width:0;
+}
+.af-access-btn:hover{
+    background-color:var(af-btn-primary);
 }
 .af-img-fluid {
   max-width: 75%;
@@ -118,7 +127,7 @@ body {
 
 }
 #searchbar {
-  translate: 0 444px;
+  translate: 0 418px;
   --bs-offcanvas-height: 50px;
 }
 @media screen and (min-width: 992px) {
