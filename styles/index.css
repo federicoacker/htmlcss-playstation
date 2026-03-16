@@ -7,3 +7,12 @@ body{
     width:100%;
     max-width:128px;
 }
+
+/*Main */
+.featured-game{
+    background-image: url(../imgs/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    width:100vw;
+    aspect-ratio:calc(16 / 9);
+}
