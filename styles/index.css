@@ -25,3 +25,13 @@ body{
     background:none;
     border:none;
 }
+.featured-game-card .buy-btn{
+    background-color: #CD3D0F;
+    border:none;
+    border-radius:75px;
+    transition:scale 0.5s ease;
+}
+.featured-game-card .buy-btn:hover{
+    scale:105%;
+}
+
