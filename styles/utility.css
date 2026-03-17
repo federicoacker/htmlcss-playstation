@@ -74,7 +74,7 @@
 .af-access-btn {
   background-color: var(--af-access-button);
   color: white;
-  min-width: 0;
+  min-width: 65px;
 }
 .af-access-btn:hover {
   background-color: var(af-btn-primary);

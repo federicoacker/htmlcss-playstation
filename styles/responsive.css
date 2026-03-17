@@ -25,4 +25,7 @@
   .playstation-now-text {
     font-size: 1.5rem;
   }
+  #searchbar {
+  height:20vh;
+}
 }
