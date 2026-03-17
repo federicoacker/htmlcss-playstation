@@ -12,6 +12,14 @@
     .nav-link {
       font-size: 1.5rem;
     }
+    .nav-item{
+      .navbar-dropdown {
+      top: 100%;
+      left: 50%;
+      translate: -50% 0;
+      width: 98%;
+      }
+    }
   }
   .playstation-plus-text,
   .playstation-now-text {

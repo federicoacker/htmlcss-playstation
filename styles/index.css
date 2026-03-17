@@ -33,8 +33,11 @@ body {
     .navbar-dropdown {
       top: 100%;
       left: 50%;
-      translate: -50% 0;
       width: 98%;
+      margin-top:0;
+    }
+    .dropdown-item{
+      width:inherit;
     }
   }
 }
