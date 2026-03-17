@@ -7,7 +7,7 @@
   --af-text-primary: #376be5;
   --af-bg-primary: #161c3b;
   --af-bg-footer: #00439c;
-  --af-bg-secondary:#BEBCBB;
+  --af-bg-secondary: #bebcbb;
 }
 body {
   font-family: "SST", Arial, Helvetica, sans-serif;
@@ -30,6 +30,12 @@ body {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
     }
+    .navbar-dropdown {
+      top: 100%;
+      left: 50%;
+      translate: -50% 0;
+      width: 98%;
+    }
   }
 }
 
@@ -45,7 +51,7 @@ body {
   right: 0;
   translate: 150%;
   margin: 5px;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .special-icon:hover::after {
   content: url(../imgs/chevron-down-solid-hover.svg);
@@ -55,10 +61,8 @@ body {
   rotate: 360deg;
 }
 #searchbar {
-  translate: 0 418px;
-  --bs-offcanvas-height: 50px;
+  --af-bg-primary: rgba(22, 28, 59, 0.8);
 }
-
 /*Main */
 .featured-game {
   background-image: url(../imgs/jumbo-bg.png);
@@ -66,6 +70,7 @@ body {
   background-position: center;
   background-size: cover;
   aspect-ratio: calc(18 / 6.75);
+  min-height: 60vh;
 }
 .featured-game > .container-fluid {
   height: 100%;
@@ -112,6 +117,35 @@ body {
   translate: -50% 0;
   position: absolute;
 }
+.playstation-5:has(.playstation-5-image-wrapper-0:hover)
+  .playstation-5-showcase-wrapper
+  > img {
+  content:url(../imgs/playstation-5-thumb.png);
+}
+.playstation-5:has(.playstation-5-image-wrapper-1:hover)
+  .playstation-5-showcase-wrapper
+  > img {
+  content:url(../imgs/joypad-thumb.png);
+}
+.playstation-5:has(.playstation-5-image-wrapper-2:hover)
+  .playstation-5-showcase-wrapper
+  > img {
+  content:url(../imgs/headset-thumb.png);
+}
+.playstation-5:has(.playstation-5-image-wrapper-3:hover)
+  .playstation-5-showcase-wrapper
+  > img {
+  content:url(../imgs/remote-thumb.png);
+}
+.playstation-5:has(.playstation-5-image-wrapper-4:hover)
+  .playstation-5-showcase-wrapper
+  > img {
+  content:url(../imgs/camera-thumb.jpg);
+}
+
+
+
+
 /*Sezione it takes two */
 .second-featured-game {
   background-image: url(../imgs/it-takes-two-hero-banner-desktop.jpg);
@@ -142,11 +176,11 @@ body {
   position: absolute;
 }
 /*Sezione ps4*/
-.ps4-card{
-    transition:0.3s ease;
+.ps4-card {
+  transition: 0.3s ease;
 }
-.ps4-card:hover{
-    scale:105%;
+.ps4-card:hover {
+  scale: 105%;
 }
 /*Sezione Sales*/
 .sales-item {
